@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Melky Zulfriadi - Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="text-white bg-black scroll-smooth">
+
+  <!-- Navbar -->
+  <nav class="w-full py-4 fixed top-0 bg-black bg-opacity-80 z-50">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <div class="flex items-center space-x-1">
+      <img src="asset/icon/logo.png" class="w-10 h-5">
+      <h1 class="text-xl font-bold">MLKY</h1>
+    </div>
+      <ul class="flex space-x-6 text-sm">
+        <li><a href="#aboutme" class="hover:text-yellow-400">About Me</a></li>
+        <li><a href="#pendidikan" class="hover:text-yellow-400">Pendidikan</a></li>
+        <li><a href="#skills" class="hover:text-yellow-400">Skill</a></li>
+        <li><a href="#sertifikat" class="hover:text-yellow-400">Sertifikat</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Awal -->
+  <section class="h-screen bg-black text-white flex items-center justify-center px-8 md:px-32">
+    <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          Hello,<br />
+          Saya adalah <br/><span class="text-yellow-400">Melky Zulfriadi</span>
+        </h1>
+        <p class="mt-4 text-lg text-gray-300">Seorang Junior Web Developer & UI Designer</p>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <img src="asset/foto/melky.jpg" alt="Foto Melky Zulfriadi" class="w-64 h-64 rounded-full object-cover shadow-lg border-4 border-yellow-400 transition-transform duration-300 hover:scale-125">
+      </div>
+    </div>
+    <div class="absolute bottom-6 left-6 flex space-x-4">
+      <a href="https://www.instagram.com/melky.zulfriadi/" target="_blank" aria-label="Instagram">
+        <img src="asset/icon/instagram.svg" class="w-6 h-6 hover:scale-110 transition" alt="Instagram" />
+      </a>
+      <a href="https://github.com/Melky3D" target="_blank" aria-label="GitHub">
+        <img src="asset/icon/github.svg" class="w-6 h-6 hover:scale-110 transition" alt="GitHub" />
+      </a>
+      <a href="https://www.youtube.com/@anjir" target="_blank" aria-label="YouTube">
+        <img src="asset/icon/youtube.svg" class="w-6 h-6 hover:scale-110 transition" alt="YouTube" />
+      </a>
+    </div>
+  </section>
+  
+
+  <!-- About Me -->
+  <section id="aboutme" class="h-screen py-16 px-4 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white border-b-4 border-yellow-400 inline-block pb-2 pt-20">About Me</h2>
+      <p class="text-gray-300 mb-4">Saya adalah seorang individu yang antusias dan terus belajar dalam dunia 
+        teknologi dan desain digital. Saat ini saya sedang menempuh pendidikan di STMIK Dharmapala Riau jurusan 
+        Sistem Informasi, dan berasal dari Kota Pekanbaru. Saat ini masih berusia 19 tahun dan sangat tertarik 
+        dengan perkembangan dunia IT dan desain modern. Walaupun umur saya masih terbilang muda, tapi saya sudah 
+        memiliki beberapa skill yang dapat diandalkan di era modern ini, seperti <b>Graphic Design, UI/UX Design,
+        Web Developer, Program Office, Photo/Vidio Editor.</b> Selain keterampilan teknis, saya juga memiliki kemampuan komunikasi 
+        berbahasa inggris yang baik, terbiasa bekerja dalam tim, serta selalu terbuka untuk belajar hal-hal 
+        baru. Saya percaya bahwa teknologi dapat mempermudah kehidupan manusia. Oleh karena itu, saya 
+        selalu berusaha meningkatkan kemampuan saya agar dapat berkontribusi di bidang ini, baik sebagai
+        seorang desainer maupun developer.</p>
+      <p class="text-yellow-300 text-2xl">"Terkadang kesendirian jauh lebih baik dari pada kebersamaan"</p>
+    </div>
+  </section>
+
+  <!--Pendidikan-->
+  <section id="pendidikan" class="bg-black h-screen py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center mb-10">
+      <h2 class="text-3xl font-bold border-b-4 border-yellow-400 inline-block pb-2">Riwayat Pendidikan</h2>
+    </div>
+    <div class="relative max-w-5xl mx-auto overflow-hidden">
+      <!-- Tombol kiri -->
+      <button id="prevSlide" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-yellow-400 border rounded-full p-2 shadow hover:bg-yellow-500">
+        &#8592;
+      </button>
+      <!-- Container Carousel --> 
+      <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+        <!-- Slide 1 -->
+      <div class="min-w-full flex flex-col md:flex-row items-center justify-between gap-8 px-4">
+        <div class="w-full md:w-1/2 ">
+          <img src="asset/foto/SD.PNG" alt="SD" class="rounded-lg shadow-lg h-[300px] object-cover mx-auto">
+        </div>
+        <div class="w-full md:w-1/2 text-center md:text-left text-white">
+          <h3 class="text-3xl font-semibold">SDN 024 Pekanbaru</h3>
+          <p class="text-gray-400 text-lg mt-2">2011 - 2017</p>
+        </div>
+      </div>
+        <!-- Slide 2 -->
+      <div class="min-w-full flex flex-col md:flex-row items-center justify-between gap-8 px-4">
+        <div class="w-full md:w-1/2">
+          <img src="asset/foto/SMP.PNG" alt="SMP" class="rounded-lg shadow-lg h-[300px] object-cover mx-auto">
+        </div>
+        <div class="w-full md:w-1/2 text-center md:text-left text-white">
+          <h3 class="text-3xl font-semibold">SMPN 10 Pekanbaru</h3>
+          <p class="text-gray-400 text-lg mt-2">2017 - 2020</p>
+        </div>
+      </div>
+        <!-- Slide 3 -->
+      <div class="min-w-full flex flex-col md:flex-row items-center justify-between gap-8 px-4 pl-4">
+        <div class="w-full md:w-1/2">
+          <img src="asset/foto/SMK.JPG" alt="SMK" class="rounded-lg shadow-lg h-[300px] object-cover mx-auto">
+        </div>
+        <div class="w-full md:w-1/2 text-center md:text-left text-white">
+          <h3 class="text-3xl font-semibold">SMK LABOR Pekanbaru</h3>
+          <p class="text-gray-400 text-lg mt-2">2020 - 2023</p>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="min-w-full flex flex-col md:flex-row items-center justify-between gap-8 px-4">
+        <div class="w-full md:w-1/2">
+          <img src="asset/foto/STMIK.jpg" alt="SMP" class="rounded-lg shadow-lg h-[300px] object-cover mx-auto">
+        </div>
+        <div class="w-full md:w-1/2 text-center md:text-left text-white">
+          <h3 class="text-3xl font-semibold">STMIK Dharmapala Riau</h3>
+          <p class="text-gray-400 text-lg mt-2">2023 - Sekarang</p>
+        </div>
+       </div>
+      </div>
+      <!-- Tombol kanan -->
+      <button id="nextSlide" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-yellow-400 border rounded-full p-2 shadow hover:bg-yellow-500">
+        &#8594;
+      </button>
+    </div>
+  </section>
+  
+
+
+  <!-- Skill -->
+  <section id="skills" class="h-screen bg-gray-900 text-white py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold border-b-4 border-yellow-400 inline-block pb-2 mb-10">Skills</h2>
+  
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
+        <div class="flex flex-col items-center">
+          <i class="fas fa-file-word text-5xl text-blue-400 mb-2 transition-transform duration-300 hover:scale-125"></i>
+          <p>Word</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fas fa-file-excel text-5xl text-green-500 mb-2 transition-transform duration-300 hover:scale-125"></i>
+          <p>Excel</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fas fa-file-powerpoint text-5xl text-red-500 mb-2 transition-transform duration-300 hover:scale-125"></i>
+          <p>PowerPoint</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="asset/icon/canva.svg" class="w-12 h-12 mb-2 object-contain transition-transform duration-300 hover:scale-125">
+          <p>Canva</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="asset/icon/figma.svg" class="w-12 h-12 mb-2 object-contain transition-transform duration-300 hover:scale-125">
+          <p>Figma</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fab fa-html5 text-5xl text-orange-500 mb-2 transition-transform duration-300 hover:scale-125"></i>
+          <p>HTML</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fab fa-css3-alt text-5xl text-blue-500 mb-2 transition-transform duration-300 hover:scale-125"></i>
+          <p>CSS</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fab fa-js-square text-5xl text-yellow-400 mb-2 transition-transform duration-300 hover:scale-125"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fab fa-php text-5xl text-indigo-400 mb-2 transition-transform duration-300 hover:scale-125"></i>
+          <p>PHP</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fab fa-java text-5xl text-red-400 mb-2 transition-transform duration-300 hover:scale-125"></i>
+          <p>Java</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="asset/icon/photoshop.png" class="w-12 h-12 mb-2 object-contain transition-transform duration-300 hover:scale-125">
+          <p>Adobe Photoshop</p>
+        </div><div class="flex flex-col items-center">
+          <img src="asset/icon/premiere.png" class="w-12 h-12 mb-2 object-contain transition-transform duration-300 hover:scale-125">
+          <p>Adobe Premier</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Sertifikat-->
+  <section id="sertifikat" class="bg-black py-16 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold border-b-4 border-yellow-400 inline-block pb-2 mb-10">Sertifikat</h2>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-10">
+        <div class="border-4 border-yellow-300 p-2 rounded-lg transition-transform duration-300 hover:scale-110">
+          <img src="asset/foto/sertifikat.PNG" alt="Sertifikat 1" class="w-full h-[500px] object-contain p-4">
+        </div>
+        <div class="border-4 border-yellow-300 p-2 rounded-lg transition-transform duration-300 hover:scale-110">
+          <img src="asset/foto/TOEFL.PNG" alt="Sertifikat 2" class="w-full h-[500px] object-contain p-4">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 text-center">
+    <p class="text-gray-400 text-sm">© 2025 Melky Zulfriadi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js?v=1"></script>
+
+</body>
+</html>
