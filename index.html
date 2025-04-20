@@ -4,28 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Melky Zulfriadi - Portofolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="asset/tailwind.js"></script>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="asset/font/css/all.min.css" />
 </head>
 
-<body class="text-white bg-black scroll-smooth">
+<body class="text-white bg-black">
 
   <!-- Navbar -->
-  <nav class="w-full py-4 fixed top-0 bg-black bg-opacity-80 z-50">
-    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
-      <div class="flex items-center space-x-1">
+<nav class="w-full py-4 fixed top-0 bg-black bg-opacity-80 z-50">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col gap-2 md:flex-row md:justify-between md:items-center">
+    <div class="flex items-center space-x-2 justify-center md:justify-start">
       <img src="asset/icon/logo.png" class="w-10 h-5">
-      <h1 class="text-xl font-bold">MLKY</h1>
+      <h1 class="text-base md:text-xl font-bold text-white">MLKY</h1>
     </div>
-      <ul class="flex space-x-6 text-sm">
-        <li><a href="#aboutme" class="hover:text-yellow-400">About Me</a></li>
-        <li><a href="#pendidikan" class="hover:text-yellow-400">Pendidikan</a></li>
-        <li><a href="#skills" class="hover:text-yellow-400">Skill</a></li>
-        <li><a href="#sertifikat" class="hover:text-yellow-400">Sertifikat</a></li>
-      </ul>
-    </div>
-  </nav>
+    <ul class="flex flex-row flex-wrap justify-center gap-x-4 text-[12px] md:text-sm text-white">
+      <li><a href="#aboutme" class="hover:text-yellow-400">About Me</a></li>
+      <li><a href="#pendidikan" class="hover:text-yellow-400">Pendidikan</a></li>
+      <li><a href="#skills" class="hover:text-yellow-400">Skill</a></li>
+      <li><a href="#sertifikat" class="hover:text-yellow-400">Sertifikat</a></li>
+    </ul>
+  </div>
+</nav>
 
 
   <!-- Awal -->
@@ -57,7 +57,7 @@
   
 
   <!-- About Me -->
-  <section id="aboutme" class="h-screen py-16 px-4 bg-gray-900">
+  <section id="aboutme" class="min-h-screen py-16 px-4 bg-gradient-to-b from-[#000000] to-[#0f172a] flex-row">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-white border-b-4 border-yellow-400 inline-block pb-2 pt-20">About Me</h2>
       <p class="text-gray-300 mb-4">Saya adalah seorang individu yang antusias dan terus belajar dalam dunia 
@@ -75,7 +75,7 @@
   </section>
 
   <!--Pendidikan-->
-  <section id="pendidikan" class="bg-black h-screen py-16 px-6">
+  <section id="pendidikan" class="bg-gradient-to-b from-[#0f172a] to-[#000000] h-screen py-16 px-6">
     <div class="max-w-5xl mx-auto text-center mb-10">
       <h2 class="text-3xl font-bold border-b-4 border-yellow-400 inline-block pb-2">Riwayat Pendidikan</h2>
     </div>
@@ -137,7 +137,7 @@
 
 
   <!-- Skill -->
-  <section id="skills" class="h-screen bg-gray-900 text-white py-16 px-6">
+  <section id="skills" class="font-bold min-h-screen bg-black text-white py-16 px-6">
     <div class="max-w-5xl mx-auto text-center">
       <h2 class="text-3xl font-bold border-b-4 border-yellow-400 inline-block pb-2 mb-10">Skills</h2>
   
@@ -195,15 +195,15 @@
   
 
   <!-- Sertifikat-->
-  <section id="sertifikat" class="bg-black py-16 px-6">
+  <section id="sertifikat" class="bg-gradient-to-b from-[#000000] to-[#0f172a] py-16 px-6">
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-3xl font-bold border-b-4 border-yellow-400 inline-block pb-2 mb-10">Sertifikat</h2>
       <div class="flex flex-col md:flex-row justify-center items-center gap-10">
-        <div class="border-4 border-yellow-300 p-2 rounded-lg transition-transform duration-300 hover:scale-110">
-          <img src="asset/foto/sertifikat.PNG" alt="Sertifikat 1" class="w-full h-[500px] object-contain p-4">
+        <div class="border-8 border-yellow-300 rounded-lg transition-transform duration-300 hover:scale-110">
+          <img src="asset/foto/sertifikat.PNG" alt="Sertifikat 1" class="w-full h-auto object-contain p-1">
         </div>
-        <div class="border-4 border-yellow-300 p-2 rounded-lg transition-transform duration-300 hover:scale-110">
-          <img src="asset/foto/TOEFL.PNG" alt="Sertifikat 2" class="w-full h-[500px] object-contain p-4">
+        <div class="border-8 border-yellow-300 rounded-lg transition-transform duration-300 hover:scale-110">
+          <img src="asset/foto/TOEFL.PNG" alt="Sertifikat 2" class="w-full h-auto object-contain p-1">
         </div>
       </div>
     </div>
@@ -212,7 +212,7 @@
 
 
   <!-- Footer -->
-  <footer class="bg-gray-800 py-6 text-center">
+  <footer class="bg-black py-6 text-center">
     <p class="text-gray-400 text-sm">© 2025 Melky Zulfriadi. All rights reserved.</p>
   </footer>
 
